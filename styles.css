@@ -1,0 +1,473 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background-color: #ffffff;
+    color: #333;
+}
+
+.logo img {
+    width: 150px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+}
+
+nav ul li a {
+    color: #333;
+    text-decoration: none;
+}
+
+.hero {
+    background: url('hero-bg.jpg') no-repeat center center/cover;
+    color: #434354;
+    text-align: center;
+    padding: 1rem 2rem;
+}
+
+.hero h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.hero h2 {
+    font-size: 3rem;
+}
+
+.services {
+    padding: 2rem;
+    text-align: center;
+}
+
+.services h2 {
+    margin-bottom: 2rem;
+}
+
+.service-card {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.card {
+    background: #f4f4f4;
+    margin: 1rem;
+    padding: 2rem;
+    border-radius: 10px;
+    text-align: center;
+    width: 250px;
+    transition: transform 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+}
+
+.card img {
+    width: 150px;
+    height: 150px;
+    margin-bottom: 1rem;
+    border: 2px solid #ddd;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    object-fit: cover; /* Ajusta la imagen para que se vea bien dentro del contenedor */
+}
+
+.card h3 {
+    margin-top: 1rem;
+    font-size: 1.5rem;
+}
+
+.card p {
+    margin: 0.5rem 0;
+    font-size: 1rem;
+}
+
+.card button {
+    background-color: #800080;
+    color: white;
+    border: none;
+    padding: 0.75rem 1.5rem;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    margin-top: 1rem;
+}
+
+.card button:hover {
+    background-color: #5e005e;
+}
+
+footer {
+    text-align: center;
+    padding: 1rem;
+    background-color: #333;
+    color: white;
+}
+
+.steps {
+    padding: 2rem;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center; /* Centra horizontalmente */
+    background-color: #f9f9f9;
+}
+
+.steps h2 {
+    width: 100%;
+    margin-bottom: 2rem;
+    font-size: 1.8rem; /* Tamaño del título ajustado */
+}
+
+.steps img {
+    max-width: 350px; /* Tamaño máximo de la imagen ajustado */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    margin-right: 2rem; /* Separación de la imagen respecto a los pasos */
+   margin-top: 228px;
+
+}
+
+.steps-content {
+    max-width: 600px;
+    text-align: left;
+    flex: 1; /* Para que ocupe el espacio restante */
+}
+
+.step {
+    display: flex;
+    align-items: flex-start;
+    margin: 1.5rem 0; /* Margen ajustado */
+    padding: 1rem;
+    background-color: #ffffff;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    border-radius: 10px;
+    transition: transform 0.3s ease-in-out;
+    max-width: 500px; /* Ancho máximo de los pasos ajustado */
+}
+
+.step:hover {
+    transform: translateY(-5px);
+}
+
+.step .counter {
+    background-color: #800080;
+    color: white;
+    border-radius: 50%;
+    width: 40px; /* Tamaño del contador ajustado */
+    height: 40px; /* Tamaño del contador ajustado */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.3rem; /* Tamaño del contador ajustado */
+    margin-right: 1rem;
+}
+
+.step .content {
+    flex: 1;
+}
+
+.step .content h3 {
+    font-size: 1rem; /* Tamaño del título de paso ajustado */
+    margin-bottom: 0.5rem;
+}
+
+.step .content p {
+    font-size: 0.95rem; /* Tamaño del texto de paso ajustado */
+    color: #666;
+}
+
+.steps-content button {
+    background-color: #800080;
+    color: white;
+    border: none;
+    padding: 0.75rem 1.5rem;
+    border-radius: 7px;
+    cursor: pointer;
+    font-size: 1rem;
+    margin-top: 1rem;
+    display: inline-block;
+    transition: background-color 0.3s ease-in-out;
+    
+}
+
+.steps-content button:hover {
+    background-color: #5e005e;
+}
+
+.psychologists {
+    text-align: center;
+    padding: 2rem;
+    background-color: #f9f9f9;
+}
+
+.psychologists h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color: #4b4b4b;
+}
+
+.psychologists p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+    color: #666;
+}
+
+.psychologist-cards {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.psychologist-card {
+    background: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 1rem;
+    width: 300px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    text-align: left;
+    transition: transform 0.3s;
+}
+
+.psychologist-card:hover {
+    transform: translateY(-10px);
+}
+
+.psychologist-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 0.5rem;
+}
+
+.psychologist-card img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    margin-right: 1rem;
+}
+
+.psychologist-info {
+    flex: 1;
+}
+
+.psychologist-info h3 {
+    font-size: 1.3rem;
+    margin: 0;
+}
+
+.psychologist-info p {
+    font-size: 0.9rem;
+    margin: 0.2rem 0;
+    color: #333;
+}
+
+.psychologist-card .description {
+    font-size: 0.9rem;
+    color: #666;
+    margin-bottom: -1rem;
+}
+
+.psychologist-card .services {
+    font-size: 0.9rem;
+    font-weight: bold;
+    color: #4b4b4b;
+    margin-bottom: -0.9rem;
+    text-align: center;
+}
+
+.psychologist-card button {
+    background-color: #800080;
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 0.9rem;
+    display: block;
+    margin: 0 auto;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.psychologist-card button:hover {
+    background-color: #5e005e;
+}
+
+.more-specialists {
+    background-color: #800080;
+    color: white;
+    border: none;
+    padding: 0.75rem 1.5rem;
+    border-radius: 7px;
+    cursor: pointer;
+    font-size: 1.2rem;
+    margin-top: 2rem;
+    display: inline-block;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.more-specialists:hover {
+    background-color: #5e005e;
+}
+
+.psychologist-card i {
+    margin-right: 5px;
+    color: #800080;
+}
+
+/* Sección de Programas */
+.programs {
+    text-align: center;
+    padding: 2rem;
+    background-color: #ffffff;
+}
+
+.programs h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color: #4b4b4b;
+}
+
+.programs p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+    color: #666;
+}
+
+.program-cards {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.program-card {
+    background: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 1rem;
+    width: 250px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    text-align: center;
+    transition: transform 0.3s;
+}
+
+.program-card:hover {
+    transform: translateY(-10px);
+}
+
+.program-card img {
+    width: 100%;
+    border-radius: 50%;
+    margin-bottom: 1rem;
+}
+
+.program-card h3 {
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+    color: #4b4b4b;
+}
+
+.program-card p {
+    font-size: 0.9rem;
+    color: #666;
+    margin-bottom: 1rem;
+}
+
+.program-card a {
+    color: #800080;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.program-card a:hover {
+    text-decoration: underline;
+}
+
+.more-programs {
+    background-color: #800080;
+    color: white;
+    border: none;
+    padding: 0.75rem 1.5rem;
+    border-radius: 7px;
+    cursor: pointer;
+    font-size: 1.2rem;
+    margin-top: 2rem;
+    display: inline-block;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.more-programs:hover {
+    background-color: #5e005e;
+}
+
+/* Estilos para pantalla pequeña */
+@media only screen and (max-width: 768px) {
+    header {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .logo img {
+        width: 100px; /* Ajusta el tamaño del logo para pantallas pequeñas */
+    }
+
+    nav ul {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+
+    .hero h1 {
+        font-size: 2rem; /* Ajusta el tamaño del título en la sección hero */
+    }
+
+    .service-card .card {
+        width: 100%; /* Ajusta el ancho de las tarjetas de servicios para ocupar toda la pantalla */
+        margin: 0.5rem 0;
+    }
+
+    .steps {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .steps img {
+        max-width: 100%; /* Ajusta el tamaño máximo de la imagen de pasos para pantallas pequeñas */
+        margin-top: 1rem;
+    }
+
+    .steps-content {
+        max-width: 100%; /* Ajusta el ancho máximo del contenido de pasos para ocupar toda la pantalla */
+    }
+
+    .psychologist-card {
+        width: 100%; /* Ajusta el ancho de las tarjetas de psicólogos para ocupar toda la pantalla */
+        margin: 0.5rem 0;
+    }
+
+    .program-card {
+        width: 100%; /* Ajusta el ancho de las tarjetas de programas para ocupar toda la pantalla */
+        margin: 0.5rem 0;
+    }
+}
+
+/* Estilos adicionales para otras resoluciones */
+@media only screen and (min-width: 1200px) {
+    /* Agrega estilos específicos para pantallas grandes si es necesario */
+}
